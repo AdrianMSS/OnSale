@@ -5,13 +5,15 @@ $(document).ready(function(){
 $('button').click(function() {
 	var name = $('#formName').val(),
 	    email = $('#formEmail').val(),
-	    value = $('#formOffer').val();
+	    value = $('#formOffer').val(),
+	    site = window.location.href;
 	if(name!=='' && email !=='' && parseFloat(value)>=250){
 	    var url = 'email/',
 		    data = {
 		      'email': email, 
 		      'name': name,
-		      'price': value
+		      'price': value,
+		      'site' : site
 		    };
 		$.ajax({ 
 		    url: url,

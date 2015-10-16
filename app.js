@@ -33,12 +33,11 @@ var transporter = nodemailer.createTransport(({
 }));
 
 app.post('/email/', function (req, res) {
-	console.log("Oferta");
     var fecha = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, ''),
     mailOptions = {
     to: 'contact@imaginexyz.com', // receiver
      subject: 'ImagineXYZ: Desde la pagina en venta - Fecha: ' + fecha, // subject
-     text: 'Email: ' + req.body['email'] + '. \n'+ 'Name: ' + req.body['name'] + '. \n'  + 'Message: ' + req.body['message'] // body
+     text: 'Email: ' + req.body['email'] + '. \n'+ 'Nombre: ' + req.body['name'] + '. \n'  + 'Oferta: ' + req.body['price']+ '. \n'  + 'Site: ' + req.body['site'] // body
      };
   transporter.sendMail(mailOptions, function(error, info){
     if(error){
