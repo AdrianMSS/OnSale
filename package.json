@@ -1,6 +1,6 @@
 {
   "name": "OnSale",
-  "version": "0.1",
+  "version": "0.2.0",
   "description": "Imagine On Sale",
   "main": "app.js",
   "engines" : { 
