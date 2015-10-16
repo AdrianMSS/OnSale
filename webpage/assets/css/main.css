@@ -25,6 +25,7 @@ body{
 }
 input{
 	color: black !important;
+    max-width: 100%;
 }
 .footer{
 	margin-left: auto;
