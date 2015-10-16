@@ -1,0 +1,19 @@
+{
+  "name": "OnSale",
+  "version": "0.1",
+  "description": "Imagine On Sale",
+  "main": "app.js",
+  "engines" : { 
+      "node" : "0.10.31",
+      "npm" : ">=1.4"
+  },
+  "authors": [ "Adrián Sánchez"],
+  "dependencies": {
+    "express": "3.x",
+    "nodemailer": "*",
+    "cookie-parser": "*",
+    "body-parser": "*",
+    "xoauth2": "*"
+  }
+}
+
